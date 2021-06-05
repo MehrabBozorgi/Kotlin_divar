@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyDivarKotlin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_account">دیوار من</string>
+    <string name="afzodan_adv">افزودن آگهی</string>
+    <string name="cat">دسته بندی ها</string>
+    <string name="home">دیوار</string>
+</resources>
