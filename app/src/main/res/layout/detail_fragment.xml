@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_detailFragment_slide"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txt_detailFragment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_detailFragment_slide"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="ماشین سمند مدل 97" />
+
+        <TextView
+            android:id="@+id/txt_detailFragment_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_detailFragment_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            tools:text="لحظاتی پیش" />
+
+        <ImageView
+            android:id="@+id/img_detailFragment_fav"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/img_detailFragment_slide"
+            android:layout_toRightOf="@+id/txt_detailFragment_option"
+            android:contentDescription="white"
+            app:srcCompat="@drawable/ic_favblack" />
+
+        <TextView
+            android:id="@+id/txt_detailFragment_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_detailFragment_slide"
+            android:layout_margin="8dp"
+            android:background="@drawable/shape_option"
+            android:padding="4dp"
+            android:textColor="@color/red600"
+            tools:text="فوری" />
+
+        <View
+            android:id="@+id/view_detailFragment_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txt_detailFragment_date"
+            android:layout_margin="8dp"
+            android:background="@color/gery500" />
+
+        <TextView
+            android:id="@+id/txt_detailFragment_catTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_detailFragment_line"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:text="دسته بندی"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_detailFragment_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_detailFragment_catTitle"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:text="قیمت (تومان)"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_detailFragment_catTitleValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_detailFragment_line"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="32dp"
+            android:layout_toLeftOf="@id/txt_detailFragment_catTitle"
+            tools:text="املاک" />
+
+        <TextView
+            android:id="@+id/txt_detailFragment_PriceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_detailFragment_catTitleValue"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="32dp"
+            android:layout_toLeftOf="@id/txt_detailFragment_price"
+            tools:text="230000 تومان" />
+
+        <View
+            android:id="@+id/view_detailFragment_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txt_detailFragment_price"
+            android:layout_margin="8dp"
+            android:background="@color/gery500" />
+
+        <TextView
+            android:id="@+id/txt_detailFragment_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_detailFragment_line2"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            tools:text="یچیزی" />
+
+        <Button
+            android:id="@+id/btn_detailFragment_showPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_detailFragment_desc"
+            android:layout_margin="8dp"
+            android:background="@drawable/shape_btn"
+            android:text="نمایش اطلاعات تماس"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+</ScrollView>
