@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/tab_cat"
+        android:icon="@drawable/ic_cat"
+        android:title="@string/cat" />
+    <item
+        android:id="@+id/tab_circle"
+        android:icon="@drawable/ic_circle"
+        android:title="@string/afzodan_adv" />
+
+    <item
+        android:id="@+id/tab_myAccount"
+        android:icon="@drawable/ic_account"
+        android:title="@string/my_account" />
+
+
+
+
+</menu>
