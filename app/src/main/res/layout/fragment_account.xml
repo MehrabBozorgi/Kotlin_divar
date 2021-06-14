@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rel_fragmentAccount_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:gravity="right"
+        android:id="@+id/edt_fragmentAccount_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_main"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/edt_search_style"
+        android:hint="... نام کاربری"
+        android:padding="10dp"
+        android:textColorHint="@color/gery700"
+        android:textDirection="ltr" />
+
+    <EditText
+        android:gravity="right"
+        android:id="@+id/edt_fragmentAccount_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_fragmentAccount_userName"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/edt_search_style"
+        android:hint="... رمز عبور"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="@color/gery700"
+        android:textDirection="ltr" />
+
+    <Button
+        android:id="@+id/btn_fragmentAccount_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_fragmentAccount_pass"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_btn"
+        android:text="ورود" />
+
+    <TextView
+        android:id="@+id/txt_fragmentAccount_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_fragmentAccount_pass"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/btn_fragmentAccount_enter"
+        android:text="خروج از حساب کاربری"
+        android:textColor="@color/red800"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+
+    <View
+        android:id="@+id/view_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/btn_fragmentAccount_enter"
+        android:layout_margin="15dp"
+        android:background="@color/gery500" />
+
+    <TextView
+        android:id="@+id/txt_fragmentAccount_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_view"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:text="آگهی های نشان شده"
+        android:textColor="@color/gery700"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>
