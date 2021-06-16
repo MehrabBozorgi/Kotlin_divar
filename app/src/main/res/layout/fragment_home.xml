@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_fragmentHome_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/edt_fragmentHome_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/edt_search_style"
+        android:hint="جستجو در کل برنامه"
+        android:padding="12dp"
+        android:textColorHint="@color/gery700"
+        android:textSize="18dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/rv_fragmentHome_recyclerAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_fragmentHome_search"
+        android:layout_margin="3dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txt_fragmentHome_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_fragmentHome_search"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:text="موردی یافت نشد"
+        android:textColor="@color/gery700"
+        android:textSize="22dp" />
+
+
+</RelativeLayout>
+
+
