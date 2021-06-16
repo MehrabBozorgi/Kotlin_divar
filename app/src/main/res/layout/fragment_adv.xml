@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/edt_fragmentAdv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_main_toolbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edt_search_style"
+        android:hint="عنوان آگهی..."
+        android:padding="10dp"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edt_fragmentAdv_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_fragmentAdv_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edt_search_style"
+        android:hint="شهر..."
+        android:padding="10dp"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edt_fragmentAdv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_fragmentAdv_city"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edt_search_style"
+        android:hint="قیمت..."
+        android:padding="10dp"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edt_fragmentAdv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_fragmentAdv_price"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edt_search_style"
+        android:hint="توضیحات..."
+        android:padding="10dp"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edt_fragmentAdv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_fragmentAdv_desc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edt_search_style"
+        android:hint="تلفن..."
+        android:padding="10dp"
+        android:textSize="18dp" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/sp_fragmentAdv_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_fragmentAdv_phone"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:id="@+id/btn_fragemtAdv_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/shape_btn"
+        android:text="ثبت آگهی"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>
+
+
+
